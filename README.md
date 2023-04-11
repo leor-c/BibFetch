@@ -1,3 +1,4 @@
+![The BibFetch Icon](icons/icon_128x128.png)
 # BibFetch
 A Chrome extension for one-click BibTeX citation fetching to clipboard on arXiv pages.
 
