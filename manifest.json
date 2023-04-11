@@ -9,11 +9,11 @@
         "48": "icons/icon_48x48.png",
         "128": "icons/icon_128x128.png"
     },
-    "permissions": ["scripting", "activeTab", "tabs", "notifications"],
+    "permissions": ["scripting", "activeTab", "notifications"],
     "host_permissions": [
         "https://scholar.google.com/*",
         "https://scholar.googleusercontent.com/*",
-        "https://arxiv.org/"
+        "https://arxiv.org/*"
     ],
     "action": {
     "default_icon": {

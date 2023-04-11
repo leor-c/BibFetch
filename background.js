@@ -9,7 +9,6 @@ chrome.action.onClicked.addListener(async (tab) => {
   }
 
   const bibtex = await getBibtexFromGoogleScholar(tab);
-  // const bibtex = null;
 
   if (bibtex) {
 
@@ -86,7 +85,6 @@ function findCiteButton() {
 function generateBibtexLink(argument) {
   return new Promise((resolve) => {
     const listener = (request, sender, sendResponse) => {
-      // console.log('listener got "' + request.href + '"');
       resolve(request.href);
     }
 
@@ -135,6 +133,7 @@ async function getBibtexFromGoogleScholar(tab) {
     if (!results1) {
       // failed! probably got blocked...
       await chrome.tabs.remove(tmpTab.id);
+      chrome.tabs.update(tab.id, {active: true});
       return null;
     }
 
@@ -201,7 +200,6 @@ async function getArxivBibtex(tab) {
   
   if (tabURL.startsWith('https://arxiv.org/abs/')) {
     // handle this easier case without a new tab
-    // await fetchFromArxivAbsPage();
     bibtexCodeRes = await chrome.scripting.executeScript(
       {
         target: {tabId: tab.id},
