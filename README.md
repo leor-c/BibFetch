@@ -9,3 +9,5 @@ In case of failure, an arXiv citation would be copied instead (provided by the a
 A typical failure case is that Google Scholar blocks the access to the citation codes as it detects a bot-like behavior.
 A temporary fix is to run a search query in Google Scholar, which triggers an authentication form (I'm not a bot).
 Upon completion, the problem should be solved (temporarily).
+
+A guide for loading an unpacked extension (from source code) can be found [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
