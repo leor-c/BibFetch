@@ -10,4 +10,6 @@ A typical failure case is that Google Scholar blocks the access to the citation 
 A temporary fix is to run a search query in Google Scholar, which triggers an authentication form (I'm not a bot).
 Upon completion, the problem should be solved (temporarily).
 
+The extension is available at the Chrome Web Store [here](https://chrome.google.com/webstore/detail/bibfetch/aconjfmgmhkenmplildjeoiicjemklgn?hl=en-US)
+
 A guide for loading an unpacked extension (from source code) can be found [here](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked)
